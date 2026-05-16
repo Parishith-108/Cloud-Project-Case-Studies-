@@ -30,6 +30,13 @@ This repository contains a professional cloud security architecture case study a
   - `outcome.md`
   - `workflow.md`
   - `diagrams/`
+- `case-studies/05-azure-entra-keyvault-cyberark/`
+  - `problem.md`
+  - `decision.md`
+  - `tradeoffs.md`
+  - `outcome.md`
+  - `workflow.md`
+  - `diagrams/`
 - `templates/architecture-decision-record.md`
 - `certifications/README.md`
 
