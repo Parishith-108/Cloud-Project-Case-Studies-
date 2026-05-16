@@ -16,7 +16,7 @@ This repository contains a professional cloud security architecture case study a
   - `outcome.md`
   - `workflow.md`
   - `diagrams/`
-- `case-studies/03-okta-multi-cloud-federation/`
+- `case-studies/03-okta-aws-identity-federation/`
   - `problem.md`
   - `decision.md`
   - `tradeoffs.md`
