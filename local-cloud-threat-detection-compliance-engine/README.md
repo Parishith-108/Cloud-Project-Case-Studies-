@@ -9,6 +9,7 @@ The repository includes:
 - An initialization script to create unsafe resources in S3, EC2 security groups, and IAM
 - Unit tests with `pytest`
 - A polished README with architecture and execution examples
+- A GitHub Actions CI workflow for LocalStack integration validation
 
 ## Architecture
 ```mermaid
@@ -62,6 +63,14 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python -m pip install -e .
 ```
+
+## Continuous Integration
+A GitHub Actions workflow is configured to run on every push and pull request that touches this folder.
+The CI pipeline will:
+- start LocalStack via Docker Compose
+- initialize mock insecure cloud resources
+- run the scanner and remediation CLI flows
+- execute unit tests with `pytest`
 
 ## Start LocalStack
 ```powershell
