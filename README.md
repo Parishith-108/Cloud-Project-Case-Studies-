@@ -2,6 +2,19 @@
 
 This repository contains a professional cloud security architecture case study and supporting artifacts.
 
+## New portfolio projects
+
+Two new hands-on cloud security portfolio projects were added to the repository:
+
+- `devsecops-iac-security-pipeline/`
+  - Terraform sample infrastructure-as-code with secure and intentionally insecure AWS resources.
+  - Static security scanning via Checkov, Trivy, and GitHub Actions.
+  - A secure/insecure comparison with public S3 bucket and open SSH/RDP rules.
+- `local-cloud-threat-detection-compliance-engine/`
+  - Python-based LocalStack threat detection engine for S3, EC2 security groups, and IAM.
+  - Docker Compose setup for zero-cost local AWS emulation.
+  - Scan, remediation, and pytest CI validation with GitHub Actions.
+
 ## What is included
 
 - `case-studies/01-aws-network-kms-governance/`
