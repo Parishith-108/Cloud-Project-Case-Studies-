@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevSecOps IaC Security Pipeline Architecture</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"></script>
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+</head>
+<body>
+  <h1>DevSecOps IaC Security Pipeline Architecture</h1>
+  <div class="mermaid">
+    flowchart TB
+      dev[Developer Workspace]
+      code[Terraform IaC Code]
+      checkov[Checkov]
+      tfsec[Tfsec]
+      trivy[Trivy IaC Scanner]
+      github[GitHub Actions]
+      report[Security Reports / SARIF]
+
+      dev --> code
+      code --> checkov
+      code --> tfsec
+      code --> trivy
+      github --> checkov
+      github --> trivy
+      checkov --> report
+      trivy --> report
+  </div>
+</body>
+</html>

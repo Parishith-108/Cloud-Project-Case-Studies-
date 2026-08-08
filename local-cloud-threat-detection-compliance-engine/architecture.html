@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Cloud Threat Detection Architecture</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"></script>
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+</head>
+<body>
+  <h1>Local Cloud Threat Detection Architecture</h1>
+  <div class="mermaid">
+    flowchart LR
+      A[Developer] --> B[Docker Compose LocalStack]
+      B --> C[S3 Service]
+      B --> D[EC2 Service]
+      B --> E[IAM Service]
+      A --> F[Python Threat Detector]
+      F --> G[Scanner Rules]
+      F --> H[Remediator]
+      G --> I[JSON compliance report]
+      H --> J[Auto remediation operations]
+  </div>
+</body>
+</html>
