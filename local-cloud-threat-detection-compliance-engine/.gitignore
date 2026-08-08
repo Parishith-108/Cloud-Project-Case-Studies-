@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+*.egg-info/
+pip-wheel-metadata/
+.localstack/
+.localstack/*
+docker-compose.override.yml
+*.log
+*.json
+.DS_Store
+.vscode/

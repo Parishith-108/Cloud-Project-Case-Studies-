@@ -1,0 +1,20 @@
+[project]
+name = "local-cloud-threat-detection"
+version = "0.1.0"
+description = "LocalStack-based threat detection and compliance engine for AWS emulation."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "DevSecOps Portfolio" }
+]
+dependencies = [
+  "boto3>=1.28.0",
+  "rich>=13.0.0"
+]
+
+[project.scripts]
+local-cloud-threat-detection = "local_cloud_threat_detection.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0","wheel"]
+build-backend = "setuptools.build_meta"

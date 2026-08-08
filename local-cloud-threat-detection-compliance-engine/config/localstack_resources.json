@@ -1,0 +1,6 @@
+{
+  "region": "us-east-1",
+  "bucket_name": "localstack-demo-insecure-bucket",
+  "security_group_name": "localstack-open-ssh-rdp",
+  "iam_user_name": "localstack-insecure-admin"
+}
